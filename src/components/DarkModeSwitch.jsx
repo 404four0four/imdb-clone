@@ -13,7 +13,7 @@ export default function DarkModeSwitch() {
             {mounted && (currentTheme === "dark" ? (
                 <MdLightMode className="cursor-pointer text-2xl hover:text-amber-400 duration-100 transition ease-in-out" onClick={() => setTheme("light")} />
             ) : (
-                <BsFillMoonFill className="cursor-pointer text-2xl hover:text-amber-400 duration-100 transition ease-in-out" onClick={() => setTheme("dark")} />
+                <BsFillMoonFill className="cursor-pointer text-xl hover:text-amber-400 duration-100 transition ease-in-out" onClick={() => setTheme("dark")} />
             ))}
         </>
     )
