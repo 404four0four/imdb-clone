@@ -7,6 +7,10 @@
     display: none;
 }
 
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
 body {
     font-family: 'Inter', sans-serif;
 }
