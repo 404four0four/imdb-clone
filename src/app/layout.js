@@ -1,4 +1,5 @@
 import Header from '@/components/Header'
+import Navbar from '@/components/Navbar'
 import './globals.css'
 import Providers from './Providers'
 
@@ -10,9 +11,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className='dark:text-white dark:bg-black text-black transition ease-in-out duration-150'>
+      <body className='dark:text-white dark:bg-[#000000] text-black transition ease-in-out duration-150'>
         <Providers>
-          <Header />
+          <div className='flex flex-wrap'>
+            <Header />
+            <Navbar />
+          </div>
           {children}
         </Providers>
       </body>
